@@ -1,0 +1,73 @@
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Datos</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css">
+  </head>
+
+  <body>
+    {{! Abre header }}
+    <header>
+      {{! Abre NavBar }}
+      <nav class="navbar bg-light p-3">
+        <div class="container-fluid">
+          <a class="navbar-brand mt-2" href="#">
+            <img
+              src="https://cdn4.iconfinder.com/data/icons/online-shop-7/128/home-house-128.png"
+              alt=""
+              width="50"
+              height="50"
+              class="d-inline-block align-text-top"
+            />
+          </a>
+          <h4>Productos</h4>
+          <h4>Contacto</h4>
+        </div>
+      </nav>
+      {{! Cierra NavBar }}
+    </header>
+    {{! cierra header }}
+
+    {{! Abre div }}
+    <div>
+      <div>
+
+        {{{body}}}
+      </div>
+    </div>
+    {{! cierra div }}
+
+    {{! Abre footer }}
+    <footer>
+      <div class="bg-light">
+        <div class="p-4 text-center">
+          <img
+            src="https://cdn4.iconfinder.com/data/icons/online-shop-7/128/message-talk-feedback-128.png"
+            alt=""
+            width="50"
+            height="50"
+          />
+          Contactanos
+        </div>
+      </div>
+    </footer>
+    {{! Cierra footer }}
+
+    {{! Bootstrap css }}
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+
+</html>

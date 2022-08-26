@@ -1,0 +1,24 @@
+<header class="bg-dark py-5">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class=" text-center text-white">
+            <h1 class="display-4 fw-bolder ">Nuestros productos</h1>
+            <hr>
+            {{!-- el siguiente if se abre y se cierra como todo codigo, se abre con # y se cierra con / --}}
+            {{#if listExists}}
+            <div class="row">
+                {{#each listaProductos}}
+                <div class="col">
+                    <img style="width: 300px; height: 300px" src= {{this.thumbnail}} alt="">
+                    <h2>{{this.titulo}}</h2>
+                    <h3>{{this.precio}}</h3>
+                    {{!-- Boton --}}
+                    <div class="p-2">
+                        <button type="button" class="btn btn-outline-info">Comprar</button>
+                    </div>
+                    {{!-- Boton --}}
+                </div>
+                {{/each}}
+            </div>
+            {{/if}}
+        </div>
+    </div>
